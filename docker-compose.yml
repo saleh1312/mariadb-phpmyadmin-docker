@@ -25,6 +25,8 @@ services:
             - intranet
         ports:
             - "8080:80"
+        volumes:
+            - ./phpmyadmin-php.ini:/usr/local/etc/php/conf.d/phpmyadmin-php.ini:ro
 
 networks:
     intranet:
